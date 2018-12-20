@@ -13,7 +13,9 @@
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <style amp-custom>
-    /* Add your styles here */
+    .Logo {
+    max-width: 800px; 
+    }
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
  
@@ -53,26 +55,26 @@
   </head>
   <body>
     <h1>Rogue Designs</h1>
-    <amp-img alt="Rogue Logo"
+    <div class="Logo"><amp-img alt="Rogue Logo"
     media="(min-width: 670px)"
     width="800"
     height="800"
-    src="img/RogueLogo-800x800.png"></amp-img>
+    src="img/RogueLogo-800x800.png" layout="responsive"></amp-img></div>
   <amp-img alt="Rogue Logo"
     media="(min-width: 470px) and (max-width: 669px)"
     width="450"
     height="450"
-    src="img/RogueLogo-450x450.png"></amp-img>
+    src="img/RogueLogo-450x450.png layout="responsive""></amp-img>
   <amp-img alt="Rogue Logo"
     media="(min-width: 300px) and (max-width: 469px)"
     width="320"
     height="320"
-    src="img/RogueLogo-320x320.png"></amp-img>
+    src="img/RogueLogo-320x320.png layout="responsive""></amp-img>
     <amp-img alt="Rogue Logo"
     media="(min-width: 200px) and (max-width: 299px)"
     width="192"
     height="192"
-    src="img/RogueLogo-192x192.png"></amp-img>        
+    src="img/RogueLogo-192x192.png layout="responsive""></amp-img>        
     <amp-install-serviceworker src="/sw.js"
                                data-iframe-src="install-sw.html"
                                layout="nodisplay">
