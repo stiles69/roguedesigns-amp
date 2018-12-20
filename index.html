@@ -53,12 +53,21 @@
   </head>
   <body>
     <h1>Rogue Designs</h1>
-    <amp-img src="hero-img.png"
-             width="600" 
-             height="400"
-             layout="responsive" 
-             alt="This is a hero image which should be loaded as fast as possible">
-    </amp-img>
+    <amp-img alt="Rogue Logo"
+    media="(min-width: 670px)"
+    width="800"
+    height="800"
+    src="img/RogueLogo-800x800.png"></amp-img>
+  <amp-img alt="Rogue Logo"
+    media="(min-width: 470px) and (max-width: 669px)"
+    width="450"
+    height="450"
+    src="images/RogueLogo-450x450.png"></amp-img>
+  <amp-img alt="Rogue Logo"
+    media="(max-width: 469px)"
+    width="192"
+    height="192"
+    src="images/RogueLogo-192x192.png"></amp-img>    
     <amp-install-serviceworker src="/sw.js"
                                data-iframe-src="install-sw.html"
                                layout="nodisplay">
